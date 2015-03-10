@@ -1,0 +1,6 @@
+--ignore-file=match:development.log
+--ignore-file=match:test.log
+--ignore-file=match:elasticsearch.log
+--type-set=DUMB=.json
+--type-set=DUMB=.yml
+--noDUMB
