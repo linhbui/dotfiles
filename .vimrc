@@ -81,7 +81,7 @@ set autoindent
 set smartindent
 set expandtab
 set smarttab
-set shiftwidth=4
+set shiftwidth=2
 set softtabstop=4
 imap <C-Return> <CR><CR><C-o>k<Tab>
 
@@ -163,8 +163,8 @@ map <s-i> <c-i>
 :nmap <Leader>p <c-p>
 
 " set copy and paste
-:vmap <Leader>c "*y 
-:nmap <Leader>v "*p 
+:vmap <Leader>c "+y 
+:nmap <Leader>v "+p 
 
 "for quick insert , and ; in Backbone options hash
 :nmap <Leader>, ja,<ESC>
