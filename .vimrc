@@ -154,6 +154,10 @@ let g:haddock_docdir = '/home/sak/.haskell/haddock/'
 set foldmethod=syntax
 set foldlevel=99
 
+"set complete to not include i --> faster processing
+set complete-=i
+set foldmethod=manual
+
 map <s-j> <c-w>j
 map <s-k> <c-w>k
 map <s-l> <c-w>l

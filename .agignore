@@ -2,6 +2,8 @@
 /logs/
 /images/
 /vendor/
+spec/fixtures/reqqer/
+public/
 *.sql
 *.tags*
 *.gemtags*
@@ -15,3 +17,4 @@
 *.pdf
 *.md
 *.log
+*.yml
