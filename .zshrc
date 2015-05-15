@@ -75,9 +75,15 @@ fi
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+# Allow [ or ] whereever you want
+unsetopt nomatch
+
+# enable colored output from ls, etc
+export CLICOLOR=1
+
 # Example aliases
 alias ohmyzsh="vi ~/.oh-my-zsh"
-alias readme="vi README.md"
+alias rdm="vi README.md"
 alias reputedly="cd ~/Desktop/programs/reputedly/"
 alias lemmings="cd ~/Desktop/programs/lemmings/"
 alias devops="cd ~/Desktop/programs/devops/"
