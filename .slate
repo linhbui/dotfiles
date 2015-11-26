@@ -59,6 +59,8 @@ bind t:alt focus ‘Terminal’
 bind s:alt focus 'FaceTime'
 bind m:alt focus 'Messages'
 bind i:alt focus 'iTunes'
+bind r:alt focus 'RubyMine'
+bind i:alt focus 'IntelliJ'
 
 # Window Hints
 bind f:alt hint

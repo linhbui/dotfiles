@@ -49,8 +49,13 @@ plugins=(git bundler)
 
 # User configuration
 
-export PATH="$PATH:/Users/linhbui/.rvm/gems/ruby-2.1.4@rails31/bin:/Users/linhbui/.rvm/gems/ruby-2.1.4@global/bin:/Users/linhbui/.rvm/rubies/ruby-2.1.4/bin:/Users/linhbui/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin"
+eval "$(rbenv init -)"
+export TYPESAFE_ACTIVATOR=/Applications/activator-dist-1.3.6
+export PATH=$PATH:$TYPESAFE_ACTIVATOR
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+
+ #export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -80,6 +85,12 @@ unsetopt nomatch
 
 # enable colored output from ls, etc
 export CLICOLOR=1
+
+# require virtualenvs for pip installs
+export PIP_REQUIRE_VIRTUALENV=true
+gpip() {
+  PIP_REQUIRE_VIRTUALENV="" pip "$@"
+}
 
 # Example aliases
 alias ohmyzsh="vi ~/.oh-my-zsh"
